@@ -1,0 +1,23 @@
+2016/10/07
+Vth calc program
+
+ruby vth.rb file Vds
+
+data
+
+Vgs,Id1,Id2,...
+0.0,0.0,0.0,...
+0.1,1e-5,0.5e-6,...
+.
+.
+.
+
+1）fileを読み込む
+2) 1行ずつIdxの微分値とその時のVgs,Idxを記録してMAXを求める。
+3) 最後の行まで読み込んだら次の計算を行う
+	MAXの時の値を vgm idm Gmm とすると、
+
+	Vth=Vgm-Idm/Gmm -Vds/2
+
+4)出力として
+　　Vth1,Vth2,...
